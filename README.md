@@ -1,11 +1,7 @@
 
-# 📈 Sales Prediction Dashboard 📈
+# 📈 Sales Prediction System📈
 
-Welcome to the Sales Prediction Dashboard repository! This project implements a comprehensive sales prediction system that utilizes machine learning to forecast quantity sold and revenue based on historical sales data.
-
-## 📊 Dashboard Highlights
-- **Predictive Insights:** Generate predictions for quantity sold and revenue based on new user input.
-- **Data Analysis:** Analyze key metrics and trends in sales data to make informed decisions.
+Welcome to the Sales Prediction repository! This project implements a comprehensive sales prediction system that utilizes machine learning to forecast quantity sold and revenue based on historical sales data.
 
 ## 🚀 Key Features
 - **Interactive Web Interface:** A user-friendly web interface built with Flask, allowing users to input new data and receive instant predictions.

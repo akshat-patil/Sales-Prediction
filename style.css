@@ -1,0 +1,87 @@
+body {
+    background-color: #4CAF50; /* Green background */
+    color: #E0E0E0; /* Light text color */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    background-color: #1E1E1E; /* Dark card background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.title {
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    margin: 15px 0;
+    padding: 15px;
+    background-color: #2C2C2C;
+    border-radius: 5px;
+}
+
+.input-label {
+    color: #4CAF50;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+    border-bottom: 2px solid #4CAF50;
+}
+
+input[type="date"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    background-color: #2C2C2C;
+    color: #E0E0E0;
+    margin-top: 5px;
+}
+
+input[type="date"]:focus,
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    border-color: #81C784;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    background-color: #81C784;
+}
+
+.prediction {
+    margin-top: 20px;
+    background-color: #2C2C2C;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: #4CAF50;
+}

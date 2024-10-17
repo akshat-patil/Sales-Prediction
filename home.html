@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Sales Prediction</h1>
+
+        <form method="POST" action="/predict">
+            <div class="card">
+                <label class="input-label">Date</label>
+                <input type="date" name="date" required>
+            </div>
+
+            <div class="card">
+                <label class="input-label">Region</label>
+                <select name="region">
+                    <option value="East">East</option>
+                    <option value="West">West</option>
+                    <option value="North">North</option>
+                    <option value="South">South</option>
+                </select>
+            </div>
+
+            <div class="card">
+                <label class="input-label">Product Name</label>
+                <select name="product_name">
+                    <option value="Tablet">Tablet</option>
+                    <option value="Mobile">Mobile</option>
+                    <option value="Laptop">Laptop</option>
+                    <option value="Smartwatch">Smartwatch</option>
+                    <option value="Desktop">Desktop</option>
+                </select>
+            </div>
+
+            <div class="card">
+                <label class="input-label">Quantity Sold</label>
+                <input type="number" name="quantity_sold" required>
+            </div>
+
+            <div class="card">
+                <label class="input-label">Revenue</label>
+                <input type="number" name="revenue" required>
+            </div>
+
+            <button type="submit" class="submit-button">Predict</button>
+        </form>
+
+        {% if prediction_quantity %}
+        <div class="prediction">{{ prediction_quantity }}</div>
+        <div class="prediction">{{ prediction_revenue }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>
